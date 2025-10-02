@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
+import Footer from "./components/footer";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair-sans",
@@ -31,9 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-inter`}
+        className={`${playfair.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-inter flex justify-center`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
