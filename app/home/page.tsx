@@ -74,11 +74,11 @@ export default function Home() {
           className="text-4xl md:text-8xl lg:text-[180px] opacity-0 pl-4"
           ref={nameRef}
         >
-          <span className="inline-block" ref={letterARef}>
+          <span className="inline-block origin-center" ref={letterARef}>
             A
           </span>
           lex{" "}
-          <span className="inline-block" ref={letterBRef}>
+          <span className="inline-block origin-center" ref={letterBRef}>
             S
           </span>
           ison
