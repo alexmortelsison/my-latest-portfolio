@@ -1,7 +1,6 @@
 import { AiOutlineMail } from "react-icons/ai";
 import { FaFingerprint } from "react-icons/fa";
 import { BsViewStacked } from "react-icons/bs";
-import { SiAboutdotme } from "react-icons/si";
 import { AiOutlineHome } from "react-icons/ai";
 import React from "react";
 import Link from "next/link";
