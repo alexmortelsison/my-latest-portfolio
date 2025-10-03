@@ -90,7 +90,6 @@ export default function Home() {
           Frontend Developer / Web Designer
         </p>
       </div>
-      <BottomNavbar />
     </div>
   );
 }

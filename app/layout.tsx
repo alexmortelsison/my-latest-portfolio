@@ -4,6 +4,7 @@ import "./globals.css";
 import { Playfair_Display } from "next/font/google";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
+import BottomNavbar from "./components/BottomNavbar";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <BottomNavbar />
       </body>
     </html>
   );
