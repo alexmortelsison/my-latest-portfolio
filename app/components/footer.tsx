@@ -14,7 +14,7 @@ export default function Footer() {
   });
   const year = new Date().getFullYear();
   return (
-    <div className="absolute bottom-4 mx-auto items-center text-white flex justify-center text-center self-center font-playfair">
+    <div className="absolute bottom-4 mx-auto items-center text-white md:flex justify-center text-center self-center font-playfair hidden">
       <p
         className="text-gray-400 md:text-gray-500 opacity-0 text-sm md:text-[16px]"
         ref={footerRef}

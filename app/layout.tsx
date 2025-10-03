@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair-sans",
@@ -32,8 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-inter flex justify-center`}
+        className={`${playfair.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-inter flex justify-center select-none`}
       >
+        <Navbar />
         {children}
         <Footer />
       </body>
