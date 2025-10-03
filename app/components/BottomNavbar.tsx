@@ -16,7 +16,7 @@ const bottomLinks = [
 export default function BottomNavbar() {
   return (
     <div className="w-full absolute bottom-8 text-white px-16 md:hidden">
-      <div className="flex justify-between text-2xl text-gray-300">
+      <div className="flex justify-between text-4xl text-gray-300">
         {bottomLinks.map((item, index) => (
           <Link key={index} href={item.link}>
             {item.icon}
