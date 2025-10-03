@@ -1,9 +1,12 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "./components/Hero";
 import { useRouter } from "next/navigation";
 
 export default function HomePage() {
   const router = useRouter();
-  return router.push("/home");
+
+  useEffect(() => {
+    return router.push("/home");
+  }, [router]);
 }

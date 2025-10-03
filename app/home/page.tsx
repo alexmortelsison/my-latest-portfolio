@@ -1,7 +1,6 @@
 "use client";
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
-import BottomNavbar from "../components/BottomNavbar";
 
 export default function Home() {
   const nameRef = useRef(null);
