@@ -77,7 +77,7 @@ export default function AboutPage() {
         </h1>
       </div>
       <div
-        className="flex flex-col justify-center text-center md:space-y-8 space-y-4 tracking-widest items-center opacity-0 md:pl-28"
+        className="flex flex-col justify-center text-center md:space-y-8 space-y-4 tracking-widest items-center opacity-0"
         ref={pRef}
       >
         <h1 className=" lg:text-3xl text-sm tracking-wider w-[220px] lg:w-screen">
