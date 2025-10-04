@@ -67,7 +67,7 @@ export default function AboutPage() {
     });
   });
   return (
-    <div className="h-screen w-full bg-black text-white font-playfair flex justify-center items-center tracking-widest overflow-hidden">
+    <div className="h-screen w-full bg-black text-white font-playfair flex justify-center items-center tracking-widest overflow-hidden py-0">
       <div
         className="absolute top-0 left-0 h-full w-28 flex items-center justify-center -translate-x-40"
         ref={contactRef}
@@ -77,7 +77,7 @@ export default function AboutPage() {
         </h1>
       </div>
       <div
-        className="flex flex-col justify-center text-center space-y-8 tracking-widest items-center opacity-0 md:pl-28"
+        className="flex flex-col justify-center text-center md:space-y-8 space-y-4 tracking-widest items-center opacity-0 md:pl-28"
         ref={pRef}
       >
         <h1 className=" lg:text-3xl text-sm tracking-wider w-[220px] lg:w-screen">
@@ -117,7 +117,10 @@ export default function AboutPage() {
         >
           alexmortelsison@gmail.com
         </p>
-        <div className="text-5xl flex space-x-4 pt-4 opacity-0" ref={socialRef}>
+        <div
+          className="md:text-5xl text-xl flex space-x-4 pt-4 opacity-0"
+          ref={socialRef}
+        >
           <AiOutlineInstagram />
           <AiFillGithub />
           <AiOutlineLinkedin />
