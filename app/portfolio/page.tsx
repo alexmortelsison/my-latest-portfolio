@@ -77,15 +77,15 @@ export default function PortfolioPage() {
           PORTFOLIO
         </h1>
       </div>
-      <div className="flex flex-col tracking-widest lg:w-screen md:pl-28 px-8 h-full pt-48 space-y-8">
+      <div className="flex flex-col tracking-widest lg:w-screen md:pl-28 md:px-8 h-full pt-48 space-y-8 w-screen">
         <Link href={"/"}>
-          <div className="pl-24 h-[80px] border-b px-8 items-center cursor-pointer transition-colors duration-300 flex">
+          <div className="md:pl-24 h-[80px] border-b px-8 items-center cursor-pointer transition-colors duration-300 flex">
             <p className="text-3xl text-[#1dd1d8]">01</p>
             <div
-              className="flex justify-between flex-1 ml-4 -translate-x-160 opacity-0"
+              className="flex justify-between flex-1 ml-4 -translate-x-160 opacity-0 items-center"
               ref={p1}
             >
-              <h1 className="text-4xl">Portfolio</h1>
+              <h1 className="md:text-4xl text-xl">Portfolio</h1>
               <p className="text-2xl">
                 <AiOutlineArrowRight />
               </p>
@@ -93,13 +93,13 @@ export default function PortfolioPage() {
           </div>
         </Link>
         <a href="https://apple-clone-drmort.vercel.app/" target="_blank">
-          <div className="pl-24 h-[80px] border-b px-8 items-center cursor-pointer transition-colors duration-300 flex">
+          <div className="md:pl-24 h-[80px] border-b px-8 items-center cursor-pointer transition-colors duration-300 flex">
             <p className="text-3xl text-[#1dd1d8]">02</p>
             <div
-              className="flex justify-between flex-1 ml-4 -translate-x-160 opacity-0"
+              className="flex justify-between flex-1 ml-4 -translate-x-160 opacity-0 items-center"
               ref={p2}
             >
-              <h1 className="text-4xl">Apple Clone</h1>
+              <h1 className="md:text-4xl text-xl">Apple Clone</h1>
               <p className="text-2xl">
                 <AiOutlineArrowRight />
               </p>
@@ -107,13 +107,13 @@ export default function PortfolioPage() {
           </div>
         </a>
         <a href="https://on-clone.vercel.app/" target="_blank">
-          <div className="pl-24 h-[80px] border-b px-8 items-center cursor-pointer transition-colors duration-300 flex">
+          <div className="md:pl-24 h-[80px] border-b px-8 items-center cursor-pointer transition-colors duration-300 flex">
             <p className="text-3xl text-[#1dd1d8]">03</p>
             <div
-              className="flex justify-between flex-1 ml-4 -translate-x-160 opacity-0"
+              className="flex justify-between flex-1 ml-4 -translate-x-160 opacity-0 items-center"
               ref={p3}
             >
-              <h1 className="text-4xl">On.com Clone</h1>
+              <h1 className="md:text-4xl text-xl">On.com Clone</h1>
               <p className="text-2xl">
                 <AiOutlineArrowRight />
               </p>
@@ -121,13 +121,13 @@ export default function PortfolioPage() {
           </div>
         </a>
         <a href="https://djgos.vercel.app/" target="_blank">
-          <div className="pl-24 h-[80px] border-b px-8 items-center cursor-pointer transition-colors duration-300 flex">
+          <div className="md:pl-24 h-[80px] border-b px-8 items-center cursor-pointer transition-colors duration-300 flex">
             <p className="text-3xl text-[#1dd1d8]">04</p>
             <div
-              className="flex justify-between flex-1 ml-4 -translate-x-160 opacity-0"
+              className="flex justify-between flex-1 ml-4 -translate-x-160 opacity-0 items-center"
               ref={p4}
             >
-              <h1 className="text-4xl">DJ GOS</h1>
+              <h1 className="md:text-4xl text-xl">DJ GOS</h1>
               <p className="text-2xl">
                 <AiOutlineArrowRight />
               </p>
