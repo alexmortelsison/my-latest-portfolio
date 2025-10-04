@@ -32,7 +32,7 @@ export default function PortfolioPage() {
       ease: "power2.inOut",
     });
     gsap.to(contactRef.current, {
-      x: 12,
+      x: 13,
       delay: 0.5,
       duration: 0.8,
       ease: "power2.inOut",
