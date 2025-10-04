@@ -1,17 +1,16 @@
 "use client";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
-import {
-  AiFillGithub,
-  AiOutlineInstagram,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
 
 export default function PortfolioPage() {
   const pRef = useRef(null);
   const emailRef = useRef(null);
   const socialRef = useRef(null);
   const contactRef = useRef(null);
+  const p1 = useRef(null);
+  const p2 = useRef(null);
+  const p3 = useRef(null);
   useEffect(() => {
     gsap.to(pRef.current, {
       opacity: 1,
@@ -37,9 +36,30 @@ export default function PortfolioPage() {
       duration: 0.8,
       ease: "power2.inOut",
     });
-  });
+    gsap.to(p1.current, {
+      opacity: 1,
+      x: 12,
+      delay: 0.5,
+      duration: 4,
+      ease: "power2.inOut",
+    });
+    gsap.to(p2.current, {
+      opacity: 1,
+      x: 12,
+      delay: 0.5,
+      duration: 4,
+      ease: "power2.inOut",
+    });
+    gsap.to(p3.current, {
+      opacity: 1,
+      x: 12,
+      delay: 0.5,
+      duration: 4,
+      ease: "power2.inOut",
+    });
+  }, []);
   return (
-    <div className="min-h-screen w-full bg-black text-white font-playfair flex justify-center items-center tracking-widest">
+    <div className="min-h-screen w-full bg-black text-white font-playfair flex justify-center items-center tracking-widest relative">
       <div
         className="absolute top-0 left-0 h-full w-28 flex items-center justify-center -translate-x-50"
         ref={contactRef}
@@ -48,22 +68,41 @@ export default function PortfolioPage() {
           PORTFOLIO
         </h1>
       </div>
-      <div className="flex-col justify-center text-center tracking-widest items-center lg:w-screen md:pl-28">
-        <div className="opacity-0" ref={pRef}>
-          <h1 className="lg:text-4xl text-xl tracking-wider">Let's talk.</h1>
-          <p
-            className="tracking tracking-wide lg:text-7xl text-2xl hover:underline hover:underline-offset-2 hover:cursor-pointer opacity-0 pt-8"
-            ref={emailRef}
-          >
-            alexmortelsison@gmail.com
-          </p>
+      <div className="flex flex-col tracking-widest lg:w-screen md:pl-28 px-8 h-full pt-48 space-y-8">
+        <div className="pl-24 h-[80px] border-b px-8 items-center cursor-pointer transition-colors duration-300 flex">
+          <p className="text-3xl text-[#1dd1d8]">01</p>
           <div
-            className="lg:text-5xl text-3xl flex space-x-4 opacity-0 text-center justify-center pt-8"
-            ref={socialRef}
+            className="flex justify-between flex-1 ml-4 -translate-x-160 opacity-0"
+            ref={p1}
           >
-            <AiOutlineInstagram />
-            <AiFillGithub />
-            <AiOutlineLinkedin />
+            <h1 className="text-4xl">Portfolio</h1>
+            <p className="text-2xl">
+              <AiOutlineArrowRight />
+            </p>
+          </div>
+        </div>
+        <div className="pl-24 h-[80px] border-b px-8 items-center cursor-pointer transition-colors duration-300 flex">
+          <p className="text-3xl text-[#1dd1d8]">02</p>
+          <div
+            className="flex justify-between flex-1 ml-4 -translate-x-160 opacity-0"
+            ref={p2}
+          >
+            <h1 className="text-4xl">Apple Clone</h1>
+            <p className="text-2xl">
+              <AiOutlineArrowRight />
+            </p>
+          </div>
+        </div>
+        <div className="pl-24 h-[80px] border-b px-8 items-center cursor-pointer transition-colors duration-300 flex">
+          <p className="text-3xl text-[#1dd1d8]">03</p>
+          <div
+            className="flex justify-between flex-1 ml-4 -translate-x-160 opacity-0"
+            ref={p3}
+          >
+            <h1 className="text-4xl">On.com Clone</h1>
+            <p className="text-2xl">
+              <AiOutlineArrowRight />
+            </p>
           </div>
         </div>
       </div>
