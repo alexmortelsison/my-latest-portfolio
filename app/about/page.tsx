@@ -67,7 +67,7 @@ export default function AboutPage() {
     });
   });
   return (
-    <div className="min-h-screen w-full bg-black text-white font-playfair flex justify-center items-center tracking-widest overflow-hidden">
+    <div className="h-screen w-full bg-black text-white font-playfair flex justify-center items-center tracking-widest overflow-hidden">
       <div
         className="absolute top-0 left-0 h-full w-28 flex items-center justify-center -translate-x-40"
         ref={contactRef}
