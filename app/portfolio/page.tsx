@@ -1,11 +1,13 @@
 "use client";
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { AiFillGithub } from "react-icons/ai";
-import { AiOutlineInstagram } from "react-icons/ai";
-import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import React, { useEffect, useRef } from "react";
+import {
+  AiFillGithub,
+  AiOutlineInstagram,
+  AiOutlineLinkedin,
+} from "react-icons/ai";
 
-export default function ContactPage() {
+export default function PortfolioPage() {
   const pRef = useRef(null);
   const emailRef = useRef(null);
   const socialRef = useRef(null);
@@ -30,7 +32,7 @@ export default function ContactPage() {
       ease: "power2.inOut",
     });
     gsap.to(contactRef.current, {
-      x: 23,
+      x: 12,
       delay: 0.5,
       duration: 0.8,
       ease: "power2.inOut",
@@ -42,8 +44,8 @@ export default function ContactPage() {
         className="absolute top-0 left-0 h-full w-28 flex items-center justify-center -translate-x-50"
         ref={contactRef}
       >
-        <h1 className="rotate-90 text-[180px] pr-8 md:inline-flex hidden">
-          CONTACT
+        <h1 className="rotate-90 text-[160px] pr-8 md:inline-flex hidden">
+          PORTFOLIO
         </h1>
       </div>
       <div className="flex-col justify-center text-center tracking-widest items-center lg:w-screen md:pl-28">
