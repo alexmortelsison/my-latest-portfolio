@@ -44,7 +44,7 @@ export default function PortfolioPage() {
         className="absolute top-0 left-0 h-full w-28 flex items-center justify-center -translate-x-50"
         ref={contactRef}
       >
-        <h1 className="rotate-90 text-[160px] pr-8 md:inline-flex hidden">
+        <h1 className="rotate-90 text-[160px] pr-8 md:inline-flex hidden pl-8">
           PORTFOLIO
         </h1>
       </div>
