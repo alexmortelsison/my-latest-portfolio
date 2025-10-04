@@ -48,7 +48,9 @@ export default function ContactPage() {
       </div>
       <div className="flex-col justify-center text-center tracking-widest items-center lg:w-screen md:pl-28">
         <div className="opacity-0" ref={pRef}>
-          <h1 className="lg:text-4xl text-xl tracking-wider">Let's talk.</h1>
+          <h1 className="lg:text-4xl text-xl tracking-wider">
+            Let&apos;s talk.
+          </h1>
           <p
             className="tracking tracking-wide lg:text-7xl text-2xl hover:underline hover:underline-offset-2 hover:cursor-pointer opacity-0 pt-8"
             ref={emailRef}

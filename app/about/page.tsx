@@ -81,7 +81,7 @@ export default function AboutPage() {
         ref={pRef}
       >
         <h1 className=" lg:text-3xl text-sm tracking-wider w-[220px] lg:w-screen">
-          Hi, I'm{" "}
+          Hi, I&apos;m{" "}
           <span
             className="lg:text-5xl text-xl font-semibold text-white"
             ref={colorRef}
