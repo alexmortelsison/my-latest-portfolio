@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${overcamebold.variable} ${overcameoutline.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-[#f1f1f0] max-w-7xl mx-auto select-none`}
+        className={`${overcamebold.variable} ${overcameoutline.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-[#f1f1f0] relative select-none`}
       >
         <Navbar />
         {children}
