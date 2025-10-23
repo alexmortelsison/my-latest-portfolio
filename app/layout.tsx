@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localfont from "next/font/local";
+
+const overcamebold = localfont({
+  src: "../public/overcame-demo.bold.ttf",
+  variable: "--font-overcame-bold",
+  weight: "400",
+});
+const overcameoutline = localfont({
+  src: "../public/overcame-demo.outline.ttf",
+  variable: "--font-overcame-outline",
+  weight: "400",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-inter flex justify-center select-none`}
+        className={`${overcamebold.variable} ${overcameoutline.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-inter flex justify-center select-none`}
       >
         {children}
       </body>
