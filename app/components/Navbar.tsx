@@ -28,18 +28,18 @@ export default function Navbar() {
     text: "Alex",
     speed: 0.1,
     playOnMount: true,
-    range: [65, 90],
+    range: [65, 76, 69, 88, 83, 73, 79, 78],
     overdrive: false,
   });
   const sisonRef = useScramble({
     text: "Sison",
     speed: 0.3,
     playOnMount: true,
-    range: [65, 90],
+    range: [65, 76, 69, 88, 83, 73, 79, 78],
     overdrive: false,
   });
   return (
-    <div className="flex justify-between pt-8 absolute inset-0 z-20 max-w-7xl mx-auto text-white">
+    <div className="flex justify-between pt-8 absolute inset-0 z-50 max-w-7xl mx-auto text-white h-[30px]">
       <div>
         <Link className="text-4xl font-overcamebold" href={"/"}>
           <span className="font-overcamebold" ref={alexRef.ref}>
