@@ -46,7 +46,7 @@ export default function HomePageName() {
       </div>
       <span ref={nameRef.ref} className=" font-overcamebold" />
       <span className="font-overcameoutline" ref={surnameRef.ref} />
-      <span className="font-sans">/</span>
+      <span className="font-sans text-[150px]">/</span>
       <div>
         <p className="text-lg font-mono">Frontend Developer | Web Designer</p>
       </div>
