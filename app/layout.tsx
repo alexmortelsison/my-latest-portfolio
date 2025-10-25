@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import localfont from "next/font/local";
 import Navbar from "./components/Navbar";
+import LayoutContent from "./components/LayoutContent";
 
 const overcamebold = localfont({
   src: "../public/overcame-demo.bold.ttf",
@@ -40,8 +41,7 @@ export default function RootLayout({
       <body
         className={`${overcamebold.variable} ${overcameoutline.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-[#f1f1f0] relative select-none`}
       >
-        <Navbar />
-        {children}
+        <LayoutContent>{children}</LayoutContent>
       </body>
     </html>
   );
