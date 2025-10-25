@@ -8,7 +8,6 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 import React from "react";
 import { useScramble } from "use-scramble";
-import Link from "next/link";
 
 export default function HomePageName() {
   const nameRef = useScramble({
@@ -60,7 +59,7 @@ export default function HomePageName() {
   };
   return (
     <div
-      className="text-7xl text-white z-50 absolute hover:cursor-pointer "
+      className="text-7xl text-white z-50 absolute hover:cursor-pointer mt-16"
       onMouseEnter={scrambleText}
     >
       <div className="">

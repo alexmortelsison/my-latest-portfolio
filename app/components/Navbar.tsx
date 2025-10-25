@@ -45,7 +45,10 @@ export default function Navbar() {
           <span className="font-overcamebold" ref={alexRef.ref}>
             Alex
           </span>
-          <span className="font-overcameoutline" ref={sisonRef.ref}>
+          <span
+            className="font-overcameoutline text-red-500"
+            ref={sisonRef.ref}
+          >
             Sison
           </span>
         </Link>

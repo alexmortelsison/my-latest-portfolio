@@ -38,7 +38,7 @@ export default function Home() {
         />
       )}
 
-      <div className="bg-gradient-to-b from-black via-black/70 to-black/80 inset-0 absolute z-0"></div>
+      <div className="bg-gradient-to-b from-black/80 via-black/50 to-black/80 inset-0 absolute z-0"></div>
 
       <div className="">
         <video src={"/bg.mp4"} muted autoPlay playsInline loop className="" />
