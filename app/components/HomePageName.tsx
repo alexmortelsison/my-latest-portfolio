@@ -1,3 +1,4 @@
+import { CiBellOn } from "react-icons/ci";
 import { BiRightArrow } from "react-icons/bi";
 import { BiLeftArrow } from "react-icons/bi";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -41,7 +42,14 @@ export default function HomePageName() {
   const projectRef = useScramble({
     text: "Dior. Apple. On. DJ Gos. Toyota",
     playOnMount: true,
-    speed: 0.2,
+    speed: 0.5,
+    range: [65, 76, 69, 88, 83, 73, 79, 78],
+    overdrive: false,
+  });
+  const newsRef = useScramble({
+    text: "News",
+    playOnMount: true,
+    speed: 0.5,
     range: [65, 76, 69, 88, 83, 73, 79, 78],
     overdrive: false,
   });
@@ -70,11 +78,18 @@ export default function HomePageName() {
           </p>
         </div>
       </div>
-      <span ref={nameRef.ref} className=" font-overcamebold" />
-      <span className="font-overcameoutline" ref={surnameRef.ref} />
+      <span className="font-sans text-red-500">./</span>
+      <span ref={nameRef.ref} className=" font-overcamebold text-8xl" />
+      <span
+        className="font-overcameoutline text-8xl text-red-500"
+        ref={surnameRef.ref}
+      />
       <span className="font-sans text-red-500">/.</span>
       <div>
-        <p className="text-sm font-mono" ref={frontendRef.ref}></p>
+        <span className="flex items-center">
+          <CiBellOn className="text-lg mr-1 text-red-500 font-bold" />
+          <p className="text-sm font-mono" ref={frontendRef.ref}></p>
+        </span>
         <div className="flex items-center space-x-4 text-4xl mt-16">
           <BiRightArrow className="text-red-500" />
           <a href="https://www.instagram.com/alexismortelsison" target="_blank">
@@ -90,17 +105,20 @@ export default function HomePageName() {
           className="flex items-center space-x-1 font-mono text-sm mt-24"
           ref={projectRef.ref}
         >
-          <Link href="/">Dior.</Link>
-          <Link href="/">Apple.</Link>
-          <Link href="/">On.</Link>
-          <Link href="/">DJ Gos.</Link>
-          <Link href="/">Toyota.</Link>
+          <p>Dior.</p>
+          <p>Apple.</p>
+          <p>On.</p>
+          <p>DJ Gos.</p>
+          <p>Toyota.</p>
         </div>
       </div>
       <div className="fixed right-80 xl:pt-8 font-mono text-gray-300">
         <div>
           <p className="text-xl text-red-500 font-black">#</p>
-          <p className=" text-red-500 text-xl font-semibold">News</p>
+          <p
+            className=" text-red-500 text-xl font-semibold"
+            ref={newsRef.ref}
+          />
           <p className="text-lg">2025</p>
           <div className="flex items-center text-sm space-x-2 text-gray-500">
             <p>10/07</p>
