@@ -24,10 +24,13 @@ export default function Intro() {
   });
 
   return (
-    <div className="flex">
-      <h1 className="text-white font-overcamebold" ref={firstRef.ref}></h1>
+    <div className="flex text-9xl">
+      <h1
+        className="text-white font-overcamebold text-7xl md:text-9xl"
+        ref={firstRef.ref}
+      ></h1>
       <span
-        className="text-red-500 font-overcameoutline"
+        className="text-red-500 font-overcameoutline text-7xl md:text-9xl"
         ref={surnameRef.ref}
       ></span>
     </div>
