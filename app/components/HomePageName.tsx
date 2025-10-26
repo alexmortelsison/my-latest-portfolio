@@ -59,12 +59,12 @@ export default function HomePageName() {
   };
   return (
     <div
-      className="text-7xl text-white z-50 absolute hover:cursor-pointer mt-16"
+      className="text-7xl text-white z-50 absolute hover:cursor-pointer mt-16 justify-center"
       onMouseEnter={scrambleText}
     >
-      <div className="">
-        <div>
-          <p className="fixed top-48 text-sm xl:right-78 font-mono flex items-center">
+      <div className="fixed top-48 text-sm xl:right-78 font-mono flex items-center">
+        <div className="">
+          <p className="flex items-center">
             <AiOutlineArrowRight className="text-red-500 text-2xl mr-4" />
             From{" "}
             <span
@@ -111,7 +111,7 @@ export default function HomePageName() {
           <p>Toyota.</p>
         </div>
       </div>
-      <div className="fixed right-80 xl:pt-8 font-mono text-gray-300">
+      <div className="fixed xl:right-80 xl:pt-8 font-mono text-gray-300">
         <div>
           <p className="text-xl text-red-500 font-black">#</p>
           <p

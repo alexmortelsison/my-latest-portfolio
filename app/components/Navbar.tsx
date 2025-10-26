@@ -39,7 +39,7 @@ export default function Navbar() {
     overdrive: false,
   });
   return (
-    <div className="flex justify-between pt-8 absolute inset-0 z-50 max-w-7xl mx-auto text-white h-[30px]">
+    <div className="justify-between pt-8 px-24 absolute inset-0 z-50 xl:max-w-7xl xl:mx-auto text-white h-[30px] hidden lg:flex">
       <div>
         <Link className="text-4xl font-overcamebold" href={"/"}>
           <span className="font-overcamebold" ref={alexRef.ref}>

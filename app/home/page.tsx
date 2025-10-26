@@ -40,11 +40,18 @@ export default function Home() {
 
       <div className="bg-gradient-to-b from-black/80 via-black/50 to-black/80 inset-0 absolute z-0"></div>
 
-      <div className="">
-        <video src={"/bg.mp4"} muted autoPlay playsInline loop className="" />
+      <div className="absolute -z-1 h-full w-full">
+        <video
+          src={"/bg.mp4"}
+          muted
+          autoPlay
+          playsInline
+          loop
+          className="h-full w-full object-cover"
+        />
       </div>
 
-      <div className="flex justify-start items-center z-0 absolute inset-0 max-w-7xl mx-auto">
+      <div className="flex xl:justify-start lg:pl-24 justify-center items-center z-0 absolute inset-0 max-w-7xl mx-auto">
         <HomePageName />
       </div>
     </div>
