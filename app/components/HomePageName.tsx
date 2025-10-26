@@ -104,7 +104,7 @@ export default function HomePageName() {
           <BiLeftArrow className="text-red-500" />
         </div>
         <div
-          className="flex items-center space-x-1 font-mono text-sm mt-24"
+          className="flex items-center space-x-1 font-mono text-sm md:mt-24 mt-8"
           ref={projectRef.ref}
         >
           <p>Dior.</p>
@@ -114,7 +114,7 @@ export default function HomePageName() {
           <p>Toyota.</p>
         </div>
       </div>
-      <div className="fixed m:right-78 lg:right-40 2xl:right-96 xl:pt-8 font-mono text-gray-300">
+      <div className="fixed m:right-78 lg:right-40 md:bottom-24 bottom-20 2xl:right-96 xl:pt-8 font-mono text-gray-300">
         <div>
           <p className="text-xl text-red-500 font-black">#</p>
           <p
