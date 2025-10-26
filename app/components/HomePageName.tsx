@@ -59,10 +59,10 @@ export default function HomePageName() {
   };
   return (
     <div
-      className="text-7xl text-white z-50 absolute hover:cursor-pointer mt-16 justify-center"
+      className="lg:text-7xl text-white z-50 absolute hover:cursor-pointer md:mt-16 justify-center px-4 lg:px-0"
       onMouseEnter={scrambleText}
     >
-      <div className="fixed top-48 text-sm xl:right-78 font-mono flex items-center">
+      <div className="fixed md:top-48 top-36 text-sm m:right-78 lg:right-40 2xl:right-96 font-mono flex items-center">
         <div className="">
           <p className="flex items-center">
             <AiOutlineArrowRight className="text-red-500 text-2xl mr-4" />
@@ -78,9 +78,12 @@ export default function HomePageName() {
         </div>
       </div>
       <span className="font-sans text-red-500">./</span>
-      <span ref={nameRef.ref} className=" font-overcamebold text-8xl" />
       <span
-        className="font-overcameoutline text-8xl text-red-500"
+        ref={nameRef.ref}
+        className=" font-overcamebold md:text-8xl text-7xl"
+      />
+      <span
+        className="font-overcameoutline md:text-8xl text-7xl text-red-500"
         ref={surnameRef.ref}
       />
       <span className="font-sans text-red-500">/.</span>
@@ -111,7 +114,7 @@ export default function HomePageName() {
           <p>Toyota.</p>
         </div>
       </div>
-      <div className="fixed xl:right-80 xl:pt-8 font-mono text-gray-300">
+      <div className="fixed m:right-78 lg:right-40 2xl:right-96 xl:pt-8 font-mono text-gray-300">
         <div>
           <p className="text-xl text-red-500 font-black">#</p>
           <p
