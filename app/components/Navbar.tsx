@@ -3,6 +3,7 @@ import React from "react";
 import ScrambleLink from "./ScrambleLink";
 import { useScramble } from "use-scramble";
 import Link from "next/link";
+import EqualizerButton from "./EqualizerButton";
 
 const navLinks = [
   {
@@ -53,7 +54,9 @@ export default function Navbar() {
           </span>
         </Link>
       </div>
-      <div></div>
+      <div>
+        <EqualizerButton />
+      </div>
       <div className="flex space-x-4">
         {navLinks.map((item, index) => (
           <div key={index}>
