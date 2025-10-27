@@ -59,7 +59,7 @@ export default function HomePageName() {
   };
   return (
     <div
-      className="lg:text-7xl text-white z-50 hover:cursor-pointer md:mt-16 justify-center px-4 lg:px-0 max-w-7xl mx-auto"
+      className="lg:text-7xl text-white z-50 hover:cursor-pointer md:mt-28 justify-center px-4 lg:px-0 max-w-7xl mx-auto"
       onMouseEnter={scrambleText}
     >
       <div className="flex justify-end w-[1100px]">
