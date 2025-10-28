@@ -51,7 +51,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex xl:justify-start lg:pl-24 justify-center items-center z-0 absolute inset-0 max-w-7xl mx-auto">
+      <div className="flex xl:justify-start lg:pl-24 justify-center items-center z-0 absolute inset-0 lg:max-w-7xl lg:mx-auto">
         <HomePageName />
       </div>
     </div>
