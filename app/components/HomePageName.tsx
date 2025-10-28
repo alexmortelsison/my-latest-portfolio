@@ -59,12 +59,12 @@ export default function HomePageName() {
   };
   return (
     <div
-      className="lg:text-7xl text-white z-50 hover:cursor-pointer md:mt-24 justify-center px-4 lg:px-0 max-w-7xl mx-auto"
+      className="lg:text-7xl text-white z-50 hover:cursor-pointer md:mt-24 items-center text-center lg:text-start justify-center lg:px-0 lg:max-w-7xl lg:mx-auto"
       onMouseEnter={scrambleText}
     >
-      <div className="flex justify-end w-[1100px]">
+      <div className="flex lg:justify-end justify-center lg:w-[1100px] w-screen mt-42 lg:mt-0">
         <div className="text-sm font-mono items-center flex">
-          <div className="">
+          <div className="mb-8">
             <p className="flex items-center">
               <AiOutlineArrowRight className="text-red-500 text-2xl mr-4" />
               From{" "}
@@ -82,15 +82,15 @@ export default function HomePageName() {
       <span className="font-sans text-red-500">./</span>
       <span
         ref={nameRef.ref}
-        className=" font-overcamebold md:text-8xl text-7xl"
+        className=" font-overcamebold md:text-8xl text-7xl mt-48"
       />
       <span
         className="font-overcameoutline md:text-8xl text-7xl text-red-500"
         ref={surnameRef.ref}
       />
       <span className="font-sans text-red-500">/.</span>
-      <div>
-        <span className="flex items-center">
+      <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start">
+        <span className="flex items-center justify-center lg:justify-start pt-8 lg:pt-0">
           <CiBellOn className="text-lg mr-1 text-red-500 font-bold" />
           <p className="text-sm font-mono" ref={frontendRef.ref}></p>
         </span>
@@ -116,25 +116,27 @@ export default function HomePageName() {
           <p>Toyota.</p>
         </div>
       </div>
-      <div className="xl:pt-8 font-mono text-gray-300 flex justify-end">
-        <div>
+      <div className="xl:pt-8 font-mono text-gray-300 flex lg:justify-end justify-center text-center mt-12 lg:mt-0">
+        <div className="lg:text-start">
           <p className="text-xl text-red-500 font-black">#</p>
           <p
             className=" text-red-500 text-xl font-semibold"
             ref={newsRef.ref}
           />
           <p className="text-lg">2025</p>
-          <div className="flex items-center text-sm space-x-2 text-gray-500">
-            <p>10/07</p>
-            <p>Dior Clone launched.</p>
-          </div>
-          <div className="flex items-center text-sm space-x-2 text-gray-500">
-            <p>10/02</p>
-            <p>Apple Clone launched.</p>
-          </div>
-          <div className="flex items-center text-sm space-x-2 text-gray-500">
-            <p>09/29</p>
-            <p>DJ Gos launched.</p>
+          <div className=" flex flex-col text-center justify-center items-center lg:items-start">
+            <div className="flex items-center text-sm space-x-2 text-gray-500">
+              <p>10/07</p>
+              <p>Dior Clone launched.</p>
+            </div>
+            <div className="flex items-center text-sm space-x-2 text-gray-500">
+              <p>10/02</p>
+              <p>Apple Clone launched.</p>
+            </div>
+            <div className="flex items-center text-sm space-x-2 text-gray-500">
+              <p>09/29</p>
+              <p>DJ Gos launched.</p>
+            </div>
           </div>
         </div>
       </div>
