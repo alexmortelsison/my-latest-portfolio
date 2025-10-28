@@ -63,14 +63,19 @@ export default function HomePageName() {
       onMouseEnter={scrambleText}
     >
       <div className="fixed md:top-48 top-18 text-sm m:right-78 lg:right-40 2xl:right-58 font-mono flex items-center">
-        <p className="flex items-center">
-          <AiOutlineArrowRight className="text-red-500 text-2xl mr-4" />
-          From{" "}
-          <span className="text-red-500 mx-1 font-semibold" ref={japanRef.ref}>
-            Japan
-          </span>{" "}
-          <span className="underline">to anywhere in the world.</span>
-        </p>
+        <div className="">
+          <p className="flex items-center">
+            <AiOutlineArrowRight className="text-red-500 text-2xl mr-4" />
+            From{" "}
+            <span
+              className="text-red-500 mx-1 font-semibold"
+              ref={japanRef.ref}
+            >
+              Japan
+            </span>{" "}
+            <span className="underline">to anywhere in the world.</span>
+          </p>
+        </div>
       </div>
       <span className="font-sans text-red-500">./</span>
       <span
